@@ -46,26 +46,52 @@ const Login = ({setAuth}) =>{
             }
         }
     return (
-        <div className="container">
-            <Row>
-                <Col className="image-login" span={12}>
-                    <div className="image-login-container" >
+        <div className="login-page">
+           <div className="container">
+               
+                    <div className="sub-container-left">
+                    <div className="image-left" >
                         
                     </div>
-                </Col>
-                <Col span={12}> 
-                     <div className="main">
-                            <p className="sign" align="center">Sign in</p>
-                    
-                            <form className="form1" onSubmit={onSubmitForm}>
-                                <input className="un "  type="email" name="email" placeholder="email" value={email}onChange={e=>onChange(e)} />
-                                <input className="pass" type="password" name="password" placeholder="password"value={password}onChange={e=>onChange(e)}/>
-                                <button className="submit">submit</button>
-                            </form>
-                            <Link  className="forgot"  to="/register">Register</Link>
                     </div>
-                </Col>
-            </Row>
+                
+                    
+                    
+                            <form className="sub-container-right" onSubmit={onSubmitForm}>
+                                <div className="image-right"></div>
+                                <div className="login-title"> 
+                                 <h1>login GeoBI</h1>
+                                </div>
+                                <div className="input-container">
+                                <input className="un "
+                                   type="email" name="email"
+                                   placeholder="email" value={email}
+                                   onChange={e=>onChange(e)} />
+                                   </div>
+                                   <div className="input-container">
+                                <input className="pass"
+                                 type="password" name="password"
+                                  placeholder="password"value={password}
+                                  onChange={e=>onChange(e)}/>
+                                </div>
+                                <div className="forgot-password">
+                                <Link  className="forgot"  to="/register">
+                                <p className="forgot-password-text"> Register </p>
+                                </Link>
+                                    </div>
+                                    <div className="input-container">
+                                <button className="submit">submit</button>
+                                </div>
+                                <div className="footer">
+                                    <p className="footer-text">
+                                        copyright @ djamel 2021
+                                    </p>
+                                </div>
+                            </form>
+                            
+                    
+                
+                    </div>  
            
         </div>
     )

@@ -46,13 +46,8 @@ const Register = ({setAuth}) =>{
     return (
         
 
-        <div className="container">
-          <Row>
-            <Col className="image-register" span={12}>
-                <div className="image-register-container" >   
-                </div>
-            </Col>
-            <Col span={12}> 
+        <div className="container2">
+          
                     <div className="main-register">
                        <p className="register"  align="center">Register</p>
                        <form className="form2" onSubmit={onSubmitForm}>
@@ -63,9 +58,7 @@ const Register = ({setAuth}) =>{
                          </form>
                        <Link className="forgot" to="/login">login</Link>
                     </div>
-            </Col>
-         </Row>
-
+           
         </div>
     )
 }
