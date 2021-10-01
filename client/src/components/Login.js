@@ -63,24 +63,24 @@ const Login = ({setAuth}) =>{
                                  <h1>login GeoBI</h1>
                                 </div>
                                 <div className="input-container">
-                                <input className="un "
-                                   type="email" name="email"
-                                   placeholder="email" value={email}
-                                   onChange={e=>onChange(e)} />
-                                   </div>
-                                   <div className="input-container">
-                                <input className="pass"
-                                 type="password" name="password"
-                                  placeholder="password"value={password}
-                                  onChange={e=>onChange(e)}/>
-                                </div>
-                                <div className="forgot-password">
-                                <Link  className="forgot"  to="/register">
-                                <p className="forgot-password-text"> Register </p>
-                                </Link>
+                                    <input className="un "
+                                    type="email" name="email"
+                                    placeholder="email" value={email}
+                                    onChange={e=>onChange(e)} />
                                     </div>
                                     <div className="input-container">
-                                <button className="submit">submit</button>
+                                    <input className="pass"
+                                    type="password" name="password"
+                                    placeholder="password"value={password}
+                                    onChange={e=>onChange(e)}/>
+                                </div>
+                                <div className="forgot-password">
+                                    <Link  className="forgot"  to="/register">
+                                    <p className="forgot-password-text"> Register </p>
+                                    </Link>
+                               </div>
+                                <div className="input-container">
+                                    <button className="submit">submit</button>
                                 </div>
                                 <div className="footer">
                                     <p className="footer-text">
